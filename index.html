@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="css/mianban.css" type="text/css">
+	<script src="js/jquery.js"></script>
+    <script src="js/mianban.js"></script>
+	<title>我的面板</title>
+</head>
+<body> 
+	<div class="mb_head">
+	 	<div class="mb_head2 clearfix">
+	 	    <div class="mb_head_fl fl">
+		 		您好！admin[超级管理员]
+		 		<span>|</span>
+		 		<a href="">[退出]</a>
+		 		<span>|</span>
+		 		<a href="">站点首页</a>
+		 		<span>|</span>
+	 		</div>
+	 		 <div class="mb_head_fr fr">
+	 			<a href="">锁屏</a>
+	 		</div>
+	 	</div>
+	 	<ul class="mb_menu">
+	 		<li class="hover"><span>我的面板</span></li>
+	 		<li><span>考试</span></li>
+	 		<li><span>调研问卷</span></li>
+	 		<li><span>学习库</span></li>
+	 		<li><span>设置</span></li>
+	 	</ul>
+	</div>	
+	<div class="mb_content clearfix" style="width:auto;">
+		<div class="mb_left hover fl">
+			<div class="mb_scroll fl hover">
+				<div class="mb_information">
+					<h3>
+					    个人信息
+					    <span class="mb_display hover"></span><!-- 插的箭头的图片 -->
+					</h3>
+					<ul class="mb_modify">
+						<li><span>修改个人信息</span></li>
+						<li><span>修改密码</span></li>
+					</ul>
+				</div>
+			</div>
+            <div class="mb_scroll fl">
+                <div class="mb_information">
+                    <h3>
+                        考试
+                        <span class="mb_display hover"></span><!-- 插的箭头的图片 -->
+                    </h3>
+                    <ul class="mb_modify">
+                        <li><span>修改个人信息</span></li>
+                        <li><span>修改密码</span></li>
+                    </ul>
+                </div>
+                <div class="mb_information">
+                    <h3>
+                        考试
+                        <span class="mb_display hover"></span><!-- 插的箭头的图片 -->
+                    </h3>
+                    <ul class="mb_modify">
+                        <li><span>修改个人信息</span></li>
+                        <li><span>修改密码</span></li>
+                    </ul>
+                </div>
+            </div>
+			<a id="mb_open" class="hover fr" title="展开与关闭"></a>
+		</div>
+		<div class="mb_right ">
+			<div class="mb_position">
+				 <span></span>
+				 当前位置：
+			</div>
+            <div id="mb_all">
+                <div class="mb_wode fl">
+                    <h6>我的个人信息</h6>
+                    <div class="mb_jieshao">
+                        <p>您好，admin</p>
+                        <p>所属角色：超级管理员</p>
+                        <p style="border-bottom:1px dashed #C7D8EA;"></p>
+                        <p>上次登录时间：2017-07-14 15:56:34</p>
+                        <p>上次登录IP：122.224.164.22</p>
+                    </div>
+                </div>
+                <div class="mb_wode fl" style="margin-left:10px;height:45px;">
+                    <h6>快捷方式</h6>
+                    <div></div>
+                </div>
+                <div style="height:145px;"></div>
+                <div class="mb_wode mb_wode2 fl">
+                    <h6>系统信息</h6>
+                    <div class="mb_jieshao">
+                        <p>操作系统：Linux</p>
+                        <p>服务器软件：ApachePHP/5.5.38</p>
+                        <p>MySQL 版本：5.5.54</p>
+                        <p>上传文件：30M</p>
+                    </div>
+                </div>
+            </div>
+			<div class="mb_notice">
+				<div class="mb_notice2 clearfix">
+				    <div>
+				        <p style="border-bottom:1px solid #eee;"></p>
+				    	<table class="mb_user1" style="width:100%;">
+				    		<tbody>
+				    			<tr>
+				    				<td>用户名</td>
+				    				<td>admin</td>
+				    			</tr>
+				    			<tr>
+				    				<td width="80">最后登录时间</td>
+				    				<td>2017-07-23 13:34:39</td>
+				    			</tr>
+				    			<tr>
+				    				<td>最后登录IP</td>
+				    				<td>122.224.164.22</td>
+				    			</tr>
+				    			<tr>
+				    				<td>真实姓名</td>
+				    				<td>
+				    				    <input type="text">
+				    				    <span class="mb_xm mb_xx">请输入真实姓名</span>
+				    				</td>
+				    			</tr>
+				    			<tr>
+				    				<td>E-mail</td>
+				    				<td>
+				    				    <input type="text">
+				    				    <span class="mb_email mb_xx">E-mail格式正确</span>
+				    				</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Language</td>
+				    				<td>
+				    				   <select name="" id="">
+				    				   	  <option value="">中文-Chinese simplified</option>
+				    				   	  <option value="">English</option>
+				    				   </select>
+				    				</td>
+				    			</tr>
+				    		</tbody>
+				    	</table>
+				    	<input type="submit" value="提交" class="mb_tijiao">
+				    </div>
+				    <div>
+				        <p style="border-bottom:1px solid #eee;"></p>
+				    	<table class="mb_user1" style="width:100%;">
+				    		<tbody>
+				    			<tr>
+				    				<td>用户名</td>
+				    				<td>admin（真实姓名）</td>
+				    			</tr>
+				    			<tr>
+				    				<td width="80">E-mail</td>
+				    				<td></td>
+				    			</tr>
+				    			<tr>
+				    				<td>旧密码</td>
+				    				<td>
+				    				    <input type="password">
+				    				    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+				    				</td>
+				    			</tr>
+				    			<tr>
+				    				<td>新密码</td>
+				    				<td>
+				    				    <input type="password">
+				    				    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+				    				</td>
+				    			</tr>
+				    			<tr>
+				    				<td>重复新密码</td>
+				    				<td>
+				    				    <input type="password">
+				    				    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+				    				</td>
+				    			</tr>
+				    		</tbody>
+				    	</table>
+				    	<input type="submit" value="提交" class="mb_tijiao">
+				    </div>
+				</div>
+			</div>
+            <div class="mb_notice">
+                <div class="mb_notice2 clearfix">
+                    <div>
+                        <p style="border-bottom:1px solid #eee;"></p>
+                        <table class="mb_user1" style="width:100%;">
+                            <tbody>
+                            <tr>
+                                <td>用户名1</td>
+                                <td>admin</td>
+                            </tr>
+                            <tr>
+                                <td width="80">最后登录时间</td>
+                                <td>2017-07-23 13:34:39</td>
+                            </tr>
+                            <tr>
+                                <td>最后登录IP</td>
+                                <td>122.224.164.22</td>
+                            </tr>
+                            <tr>
+                                <td>真实姓名</td>
+                                <td>
+                                    <input type="text">
+                                    <span class="mb_xm mb_xx">请输入真实姓名</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>
+                                    <input type="text">
+                                    <span class="mb_email mb_xx">E-mail格式正确</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">中文-Chinese simplified</option>
+                                        <option value="">English</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <input type="submit" value="提交" class="mb_tijiao">
+                    </div>
+                    <div>
+                        <p style="border-bottom:1px solid #eee;"></p>
+                        <table class="mb_user1" style="width:100%;">
+                            <tbody>
+                            <tr>
+                                <td>用户名2</td>
+                                <td>admin（真实姓名）</td>
+                            </tr>
+                            <tr>
+                                <td width="80">E-mail</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>旧密码</td>
+                                <td>
+                                    <input type="password">
+                                    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>新密码</td>
+                                <td>
+                                    <input type="password">
+                                    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>重复新密码</td>
+                                <td>
+                                    <input type="password">
+                                    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <input type="submit" value="提交" class="mb_tijiao">
+                    </div>
+                </div>
+                <div class="mb_notice2 clearfix">
+                    <div>
+                        <p style="border-bottom:1px solid #eee;"></p>
+                        <table class="mb_user1" style="width:100%;">
+                            <tbody>
+                            <tr>
+                                <td>用户名11</td>
+                                <td>admin</td>
+                            </tr>
+                            <tr>
+                                <td width="80">最后登录时间</td>
+                                <td>2017-07-23 13:34:39</td>
+                            </tr>
+                            <tr>
+                                <td>最后登录IP</td>
+                                <td>122.224.164.22</td>
+                            </tr>
+                            <tr>
+                                <td>真实姓名</td>
+                                <td>
+                                    <input type="text">
+                                    <span class="mb_xm mb_xx">请输入真实姓名</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>
+                                    <input type="text">
+                                    <span class="mb_email mb_xx">E-mail格式正确</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">中文-Chinese simplified</option>
+                                        <option value="">English</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <input type="submit" value="提交" class="mb_tijiao">
+                    </div>
+                    <div>
+                        <p style="border-bottom:1px solid #eee;"></p>
+                        <table class="mb_user1" style="width:100%;">
+                            <tbody>
+                            <tr>
+                                <td>用户名22</td>
+                                <td>admin（真实姓名）</td>
+                            </tr>
+                            <tr>
+                                <td width="80">E-mail</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>旧密码</td>
+                                <td>
+                                    <input type="password">
+                                    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>新密码</td>
+                                <td>
+                                    <input type="password">
+                                    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>重复新密码</td>
+                                <td>
+                                    <input type="password">
+                                    <span class="mb_xm mb_xx">不修改密码请留空。</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <input type="submit" value="提交" class="mb_tijiao">
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</body>
+</html>	
